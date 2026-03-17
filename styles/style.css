@@ -105,8 +105,8 @@ ol {
   text-transform: uppercase;
   display: -webkit-box;
   -webkit-box-orient: vertical;
-  -webkit-line-clamp: 2; 
-  overflow: hidden;           
+  -webkit-line-clamp: 2;
+  overflow: hidden;
   text-overflow: ellipsis;
 }
 
@@ -118,8 +118,8 @@ ol {
   letter-spacing: 0;
   display: -webkit-box;
   -webkit-box-orient: vertical;
-  -webkit-line-clamp: 2; 
-  overflow: hidden;           
+  -webkit-line-clamp: 2;
+  overflow: hidden;
   text-overflow: ellipsis;
 }
 
@@ -159,7 +159,6 @@ ol {
 
 .content__card-link {
   text-decoration:none;
-  color:#FFFFFF ;
   display: block;
   color: #fff;
 }
