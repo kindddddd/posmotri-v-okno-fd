@@ -72,6 +72,7 @@ ol {
   flex-direction: column;
   height: 298px;
   overflow-y: auto;
+  position: relative;
 }
 
 .content__details {
