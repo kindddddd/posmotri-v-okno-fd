@@ -58,6 +58,7 @@ ol {
   gap:30px;
   align-items: flex-end;
   width: 1140px;
+  height:534px;
 }
 
 .search-form {
@@ -67,9 +68,10 @@ ol {
 }
 
 .content__list-container {
-  height: 534px;
+  display: flex;
+  flex-direction: column;
+  height: 298px;
   overflow-y: auto;
-  position: relative;
 }
 
 .content__details {
@@ -87,6 +89,8 @@ ol {
   min-width: 194px;
   object-fit:cover;
   object-position:center;
+  flex-shrink: 0;
+  
 }
 
 .content__video-card-description-container {
@@ -103,10 +107,8 @@ ol {
   line-height: 100%;
   letter-spacing: 0;
   text-transform: uppercase;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 2;
   overflow: hidden;
+  white-space: nowrap;
   text-overflow: ellipsis;
 }
 
@@ -116,16 +118,16 @@ ol {
   font-size: 18px;
   line-height: 16.2px;
   letter-spacing: 0;
+  line-height: 1.2;
   display: -webkit-box;
   -webkit-box-orient: vertical;
-  -webkit-line-clamp: 2;
+  -webkit-line-clamp: 1;
   overflow: hidden;
-  text-overflow: ellipsis;
 }
 
 .result__video-container {
   width: 711px;
-  height: 456px;
+  height: 386px;
   margin-bottom: 16px;
   position: relative;
 }
@@ -134,6 +136,10 @@ ol {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.search-form__fieldset {
+  height: 54px;
 }
 
 .search-form__fieldset-title {
@@ -146,11 +152,11 @@ ol {
 .title {
   font-family: Oswald;
   font-weight: 700;
-  font-style: Bold;
   font-size: 75px;
   line-height: 94%;
   letter-spacing: 0;
   text-transform: uppercase;
+  margin-bottom: 26px;
 }
 
 .content__accent {
@@ -161,6 +167,7 @@ ol {
   text-decoration:none;
   display: block;
   color: #fff;
+  min-width: 0;
 }
 
 .visually-hidden {
@@ -257,7 +264,7 @@ ol {
 
 .more-button {
   width: 100%;
-  height: 34px;
+  min-height: 34px;
 }
 
 .button:hover {
@@ -300,6 +307,7 @@ ol {
 .content__list-item {
   padding: 0 3px;
   margin-bottom: 30px;
+  max-width: 390px;
 }
 
 .search-form__label-text,
